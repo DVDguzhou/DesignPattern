@@ -6,7 +6,7 @@ public abstract class Factory {
         try {
             factory = (Factory)Class.forName(classname).getDeclaredConstructor().newInstance();
         } catch (ClassNotFoundException e) {
-            System.out.println("クラス " + classname + " が見つかりません。");
+            System.out.println("not find  " + classname + " class");
         } catch (Exception e) {
             e.printStackTrace();
         }
