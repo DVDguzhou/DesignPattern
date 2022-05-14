@@ -1,4 +1,7 @@
-package com.hlw.StrategyPattern;
+package com.hlw.StrategyPattern.Strategy_;
+
+import com.hlw.StrategyPattern.Hand;
+import com.hlw.StrategyPattern.Strategy;
 
 import java.util.Random;
 
@@ -6,7 +9,7 @@ import java.util.Random;
  * 每种手势的概率会随着以前的结果而变
  */
 @SuppressWarnings({"all"})
-public class ProbStrategy implements Strategy{
+public class ProbStrategy implements Strategy {
 
     private Random random;
     private int prevHandValue = 0;
