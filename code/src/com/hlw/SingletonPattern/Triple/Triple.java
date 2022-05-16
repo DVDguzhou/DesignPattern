@@ -5,7 +5,7 @@ public class Triple {
     private String name;
 
 
-    private static Triple[] triples = new Triple[] {
+    private static Triple[] triples = new Triple[]{
             new Triple("first"),
             new Triple("second"),
             new Triple("third")
@@ -16,7 +16,7 @@ public class Triple {
     }
 
     public Triple getInstance(int id) {
-        if(id > 2) {
+        if (id > 2) {
             return null;
         }
         return triples[id];

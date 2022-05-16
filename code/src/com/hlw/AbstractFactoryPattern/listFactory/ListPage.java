@@ -20,7 +20,7 @@ public class ListPage extends Page {
         sb.append(title);
         sb.append("</h1>\n");
         sb.append("<ul>\n");
-        for (Item item: content) {
+        for (Item item : content) {
             sb.append(item.makeHTML());
         }
         sb.append("</ul>\n");

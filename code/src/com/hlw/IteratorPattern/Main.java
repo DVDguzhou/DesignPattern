@@ -13,8 +13,8 @@ public class Main {
         bookShelf.appendBook(new Book("E"));
 
         Iterator it = bookShelf.createIterator();
-        while(it.hasNext()) {
-            Book book = (Book)it.next();
+        while (it.hasNext()) {
+            Book book = (Book) it.next();
             System.out.println(book.getName());
         }
     }

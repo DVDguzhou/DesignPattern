@@ -2,7 +2,9 @@ package com.hlw.TemplateMethodPattern;
 
 public abstract class AbstractDisplay {
     public abstract void open();
+
     public abstract void print();
+
     public abstract void close();
 
 

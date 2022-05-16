@@ -14,6 +14,7 @@ public class IDCardFactory extends Factory {
     private Map<String, Integer> map = new HashMap<>();
 
     private static int index = 0;
+
     @Override
     protected Product createProduct(String owner) {
         return new IDCard(owner);

@@ -14,7 +14,7 @@ public class BookShelfIterator implements Iterator {
 
     @Override
     public boolean hasNext() {
-        if(index < bookShelf.getLenth()) {
+        if (index < bookShelf.getLenth()) {
             return true;
         }
         return false;

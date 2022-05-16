@@ -21,21 +21,25 @@ public class Hand {
     };
 
     private int handvalue;
+
     private Hand(int handvalue) {
         this.handvalue = handvalue;
     }
+
     public static Hand getHand(int handvalue) {
         return hand[handvalue];
     }
+
     private int fight(Hand h) {
-        if(this == h) {
+        if (this == h) {
             return 0;
-        }else if ((this.handvalue + 1) % 3 == h.handvalue) {
+        } else if ((this.handvalue + 1) % 3 == h.handvalue) {
             return 1;
-        }else {
+        } else {
             return -1;
         }
     }
+
     public boolean isStrongerThan(Hand h) {
         return fight(h) == 1;
     }

@@ -14,7 +14,7 @@ public class ListTray extends Tray {
         sb.append("<li>\n");
         sb.append(caption);
         sb.append("\n<ul>\n");
-        for (Item item: tray) {
+        for (Item item : tray) {
             sb.append(item.makeHTML());
         }
         sb.append("</ul>\n");

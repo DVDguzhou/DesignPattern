@@ -9,12 +9,13 @@ public class Player {
     private int winCount;
     private int loseCount;
     private int gameCount;
+
     public Player(String name, Strategy strategy) {
         this.name = name;
         this.strategy = strategy;
     }
 
-    public Hand nextHand(){
+    public Hand nextHand() {
         return strategy.nextHand();
     }
 
