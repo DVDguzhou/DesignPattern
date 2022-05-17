@@ -5,7 +5,7 @@ public class Triple {
     private String name;
 
 
-    private static Triple[] triples = new Triple[]{
+    private static final Triple[] triples = new Triple[]{
             new Triple("first"),
             new Triple("second"),
             new Triple("third")
